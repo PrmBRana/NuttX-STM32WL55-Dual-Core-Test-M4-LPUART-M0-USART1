@@ -151,3 +151,12 @@ int ipcc_poll(FAR struct file *filep, FAR struct pollfd *fds,
   nxmutex_unlock(&priv->lock);
   return OK;
 }
+
+/****************************************************************************
+ * Name: ipcc_pollnotify
+ ****************************************************************************/
+
+void ipcc_pollnotify(FAR struct ipcc_driver_s *ipcc, pollevent_t eventset)
+{
+  poll_notify(ipcc->fds, CONFIG_IPCC_NPOLLWAITERS, eventset);
+}
