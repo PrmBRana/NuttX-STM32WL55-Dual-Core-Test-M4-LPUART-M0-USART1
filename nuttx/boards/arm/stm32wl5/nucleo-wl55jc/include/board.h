@@ -128,15 +128,20 @@
  *   TXD: PB6   (D1 on arduino pinout)
  */
 
-#define GPIO_USART1_RX GPIO_USART1_RX_2    /* PB7 */
-#define GPIO_USART1_TX GPIO_USART1_TX_2    /* PB6 */
+#define GPIO_USART1_RX GPIO_USART1_RX_1    /* PA10 */
+#define GPIO_USART1_TX GPIO_USART1_TX_1    /* PA9 */
 
 /* LPUART1
  *   Connected to virtual com port
  */
 
-#define GPIO_LPUART1_RX GPIO_LPUART1_RX_1  /* PA3  */
-#define GPIO_LPUART1_TX GPIO_LPUART1_TX_1  /* PA2 */
+#define GPIO_LPUART1_RX GPIO_LPUART1_RX_3  /* PB10  */
+#define GPIO_LPUART1_TX GPIO_LPUART1_TX_3  /* PB11  */
+
+/*USART2*/
+#define GPIO_USART2_RX GPIO_USART2_RX_1    /* PA3 */
+#define GPIO_USART2_TX GPIO_USART2_TX_1    /* PA2 */
+
 
 #define GPIO_SPI1_MISO   GPIO_SPI1_MISO_2
 #define GPIO_SPI1_MOSI   GPIO_SPI1_MOSI_2
